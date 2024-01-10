@@ -77,22 +77,17 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: cb01db2707aa97a4e94efee03de71f52, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5115665549051153157}
+      addedObject: {fileID: 2808549785802569757}
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: cb01db2707aa97a4e94efee03de71f52, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7319328760192063157}
   m_SourcePrefab: {fileID: 100100000, guid: cb01db2707aa97a4e94efee03de71f52, type: 3}
---- !u!95 &2111518244622979505 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: cb01db2707aa97a4e94efee03de71f52, type: 3}
-  m_PrefabInstance: {fileID: 3944354653735442385}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5016100408427286232 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: cb01db2707aa97a4e94efee03de71f52, type: 3}
   m_PrefabInstance: {fileID: 3944354653735442385}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5115665549051153157
+--- !u!114 &2808549785802569757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,14 +99,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d0d768a0d357334286e5a146ac21b9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: 30
+  Hp: 20
   AttackRange: 2
-  MoveSpeed: 20
+  MoveSpeed: 30
   SimpleAttackDamage: 1
   SimpleAttackSpeed: 1
   HeavyAttackDamage: 3
   HeavyAttackSpeed: 2
-  AnimatorController: {fileID: 2111518244622979505}
+  HeavyAttackImage: {fileID: 0}
+  AnimatorController: {fileID: 0}
 --- !u!54 &7319328760192063157
 Rigidbody:
   m_ObjectHideFlags: 0

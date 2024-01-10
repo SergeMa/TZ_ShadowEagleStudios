@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     private bool isAttacking = false;
     [SerializeField] private Image HeavyAttackImage;
     public Animator AnimatorController;
-    float BeginHeavyCooldown;
+    float BeginHeavyCooldown = 0;
     Enemie closestEnemie;
 
     private void Start()
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            AnimatorController.SetFloat("Speed", MoveSpeed);
+            AnimatorController.SetFloat("Speed", 0);
         }
     }
 
@@ -119,8 +119,6 @@ public class Player : MonoBehaviour
                 var distance = Vector3.Distance(transform.position, closestEnemie.transform.position);
                 if (distance <= AttackRange)
                 {
-
-                    //transform.LookAt(closestEnemie.transform);
                     transform.transform.rotation = Quaternion.LookRotation(closestEnemie.transform.position - transform.position);
                     closestEnemie.Hp -= SimpleAttackDamage;
                     if (closestEnemie.Hp <= 0)
